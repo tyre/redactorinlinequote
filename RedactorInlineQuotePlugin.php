@@ -21,7 +21,7 @@ class redactorInlineQuotePlugin extends BasePlugin
 
     public function getPluginUrl()
     {
-        return 'https://github.com/tyre/redactor-inline-quote';
+        return 'https://github.com/tyre/redactorinlinequote';
     }
 
     public function getDocumentationUrl()
@@ -35,14 +35,14 @@ class redactorInlineQuotePlugin extends BasePlugin
         return 'en';
     }
 
-    protected function defineSettings()
-    {
-        return array(
-            'insertquotes' => array(
-                AttributeType::Bool, 'default' => true
-            )
-        );
-    }
+    // protected function defineSettings()
+    // {
+    //     return array(
+    //         'insertquotes' => array(
+    //             AttributeType::Bool, 'default' => true
+    //         )
+    //     );
+    // }
 
     public function init()
     {
