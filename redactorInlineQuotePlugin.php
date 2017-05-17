@@ -29,6 +29,7 @@ class redactorInlineQuotePlugin extends BasePlugin
         return $this->getPluginUrl() . '/blob/master/README.md';
     }
 
+
     public function getSourceLanguage()
     {
         return 'en';
