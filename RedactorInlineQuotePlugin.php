@@ -2,11 +2,11 @@
 
 namespace Craft;
 
-class redactorInlineQuotePlugin extends BasePlugin
+class RedactorInlineQuotePlugin extends BasePlugin
 {
     function getName()
     {
-         return Craft::t('Redactor Inline Quote');
+         return 'Redactor Inline Quote';
     }
 
     function getVersion()
@@ -46,6 +46,7 @@ class redactorInlineQuotePlugin extends BasePlugin
 
     public function init()
     {
+        parent::init();
         if (craft()->request->isCpRequest())
         {
             craft()->templates->includeJsResource('redactorinlinequote/js/redactor-inline-quote.js');
